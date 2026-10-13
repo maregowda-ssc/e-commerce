@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'DM Sans', sans-serif; color: #1d2925; background: #f5f1e8; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #d5e4cf; }
+.hero-grid { background-image: linear-gradient(rgba(245,241,232,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(245,241,232,.08) 1px, transparent 1px); background-size: 48px 48px; }
+.product-image { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.product-card:hover .product-image { transform: scale(1.04); }
+.reveal { animation: rise .65s both; }
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
