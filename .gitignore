@@ -3,3 +3,10 @@ dist/
 .env
 .env.*
 !.env.example
+
+.env
+.evn
+client/.env
+client/.evn
+server/.env
+server/.evn
